@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <title>Tailwind v4 Test</title>
+  </head>
+
+  <body class="p-8">
+    <h1 class="text-3xl font-bold text-primary-600">Hello Tailwind v4</h1>
+    <p class="mt-4 text-red-600">Your Tailwind setup works!</p>
+    <h1 class="text-3xl font-bold text-blue-600">Hello</h1>
+    <h1 class="text-3xl font-bold text-red-600">Hello</h1>
+    <h1 class="text-3xl font-bold text-green-600">Hello</h1>
+    <h1 class="text-primary">Primary Text</h1>
+    <h1 class="text-secondary">Secondary Text</h1>
+    <h1 class="text-brand text-4xl font-bold">Brand Color</h1>
+    <h1 class="text-danger text-4xl font-bold">Danger Color</h1>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#ff0000",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
