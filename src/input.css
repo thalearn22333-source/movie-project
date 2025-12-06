@@ -102,3 +102,27 @@
 @utility footer {
   @apply bg-dark text-white py-8 text-center mt-auto;
 }
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.custom-btn {
+  background-color: #8b1a1a;      /* dark red */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #a51d1d;      /* slightly brighter red */
+}
+

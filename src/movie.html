@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="input.css">
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar-->
+        <nav
+        class="bg-neutral-primary sticky top-0 w-full z-50 border-b border-default bg-blue-200"
+        >
+        <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+                src="https://i.pinimg.com/736x/48/e0/3f/48e03fdf114bae61b2167be28befc84e.jpg"
+                class="h-7 rounded-full hover:scale-110 transition-transform duration-300"
+                alt="movie logo"
+            />
+            <span
+                class="self-center text-xl text-heading font-semibold whitespace-nowrap hover:text-blue-500"
+                >Anime movie</span
+            >
+            </a>
+            <div class="flex items-center md:order-2">
+            <button
+                type="button"
+                data-collapse-toggle="navbar-search"
+                aria-controls="navbar-search"
+                aria-expanded="false"
+                class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none"
+            >
+                <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                />
+                </svg>
+                <span class="sr-only cursor-pointer">Search</span>
+            </button>
+            <label for="input-group-1" class="sr-only">Your Email</label>
+            <div class="relative hidden md:block">
+                <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                >
+                <svg
+                    class="w-4 h-4 text-body"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                    />
+                </svg>
+                </div>
+                <input
+                type="text"
+                id="input-group-1"
+                class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
+                placeholder="Search"
+                />
+            </div>
+            <button
+                data-collapse-toggle="navbar-search"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                aria-controls="navbar-search"
+                aria-expanded="false"
+            >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="M5 7h14M5 12h14M5 17h14"
+                />
+                </svg>
+            </button>
+            </div>
+            <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-search"
+            >
+            <div class="relative mt-3 md:hidden">
+                <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                >
+                <svg
+                    class="w-4 h-4 text-body"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+                    />
+                </svg>
+                </div>
+                <input
+                type="text"
+                id="input-group-1"
+                class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
+                placeholder="Search"
+                />
+            </div>
+            <ul
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
+            >
+                <li>
+                <a
+                    href="home.html"
+                    class="block py-2 px-3 text-heading- bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 hover:text-blue-500"
+                    aria-current="page"
+                    >Home</a
+                >
+                </li>
+                <li>
+                <a
+                    href="movie.html"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-blue-500"
+                    >Movies</a
+                >
+                </li>
+                <li>
+                <a
+                    href="#"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-blue-500"
+                    >Series</a
+                >
+                </li>
+                <li>
+                <a
+                    href="#"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-blue-500"
+                    >Top Rated</a
+                >
+                </li>
+                <li>
+                <a
+                    href="#"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-blue-500"
+                    >Genres</a
+                >
+                </li>
+                <li>
+                <a
+                    href="#"
+                    class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:text-blue-500"
+                    >Upcoming</a
+                >
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+            <!--hero section-->
+            <section class="relative bg-black">
+        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        <div class="grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2">
+        <div class="max-w-[720px]">
+            <h1 class="mb-3 pb-4 text-4xl font-bold text-white md:text-6xl">New Gods: Nezha Reborn</h1>
+            <p class="mb-6 max-w-[528px] text-xl md:mb-10 text-white">
+                Donghai City, a coastal city, is short of rain and fresh water all the year round. Lin Yunxiang, 
+                a young man who loves motorcycles, was attacked by superpowers when his car collided with the rich 
+                son of the water supply company, and he awakened the dormant myster...+ More</p>
+
+            <div class="btn-group">
+
+        <button class="custom-btn">
+            ▶ Watch trailer
+        </button>
+
+        <button class="custom-btn">➕ Add to favorite</button>
+        </div>
+        </div>
+
+        <div class="max-w-[500px] rounded-xl overflow-hidden border-2 border-red-600 p-1">
+    <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/41cf0de655170b7903d4be477874b230.jpg" class="w-full h-64 object-cover rounded-lg"/>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+
+        <!-- card1-->
+            <section class=" w-full bg-b dark:bg-[#000000] py-9 px-8">
+        <div class="mx-auto max-w-[1160px] ">
+            </header>
+            <main class="flex items-center justify-center flex-col md:flex-row gap-10">
+
+            <div class="border-2 border-red-600 rounded-lg overflow-hidden">
+        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/86bf849617a7df87e75102b376a7ead3.jpg" alt="anima1" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="border-2 border-red-600 scale-110 rounded-lg overflow-hidden">
+        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/f4ab884b46d2a0b3cc0ebc8f3241f91c.jpg" alt="Poster 2" class="w-full h-full object-cover" />
+        </div>
+
+        <div class="border-2 border-red-600 rounded-lg overflow-hidden">
+        <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/8614ce4086001d5e8ad17e065b7133f1.jpg" alt="Poster 3" class="w-full h-full object-cover" />
+                </div>
+
+            </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- card2 -->
+
+    <section class="bg-black py-10">
+    <div class="mx-auto max-w-7xl px-5 text-white text-center">
+    <h2 class="text-3xl font-bold text-red-600 mb-6">Recommended for you</h2>
+    <div class="flex justify-center space-x-5 overflow-x-auto pb-3">
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/c88d6fc439e6520ae845aee684dfa279.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Little Shark's Outings.. </p>
+        </div>
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/ab951efc86315bf5f8e0408785a609f4.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Pretty Cure All Stars..</p>
+        </div>
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/0ae962dc01e1cbd616475ee11492eb90.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Galaxy Apartment..</p>
+        </div>
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/58058b52dbc1d4aa1ab7732eb94c1f4b.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Little Astro Boy</p>
+        </div>
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/cfa80a6619e3410e732a53e7eee32821.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">aikyou Robot Daiouja</p>
+        </div>
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/64f084f9f176ed9df51c4e9599f1874a.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Seishun Fuufu..</p>
+        </div>
+        
+        </div>
+    </div>
+    </section>
+
+    <section class="bg-black py-10">
+    <div class="mx-auto max-w-7xl px-5 text-white text-center">
+    <!-- <h2 class="text-3xl font-bold text-red-600 mb-6">Recommended for you</h2> -->
+    <div class="flex justify-center space-x-5 overflow-x-auto pb-3">
+
+        <div class="min-w-[180px] rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/a4d8efaac07f5c3eff0280ea4490c3be.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Love Me, Love Me Not</p>
+        </div>
+
+        <div class="min-w-[180px] rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/42428338d9f5aac947c271da9d26ef3b.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Ore no Sora Keiji-hen</p>
+        </div>
+
+        <div class="min-w-[180px] rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/6d229f5e1449db99fd2ff97856ac8c3f.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Shizukanaru Don:..</p>
+        </div>
+
+        <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/66dc664db8be4ade4abcf925d39425c8.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">Stars Fall</p>
+        </div>
+
+        <div class="min-w-[180px] rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/2d735a461b4f07b6459a1ba2540e163b.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">[RAW] Rainbow Sentai</p>
+        </div>
+
+         <div class="min-w-[180px]  rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img src="https://cdn.noitatnemucod.net/thumbnail/300x400/100/fa335abc774739e6fe1a52fe8cc13b78.jpg" alt="" class="w-full h-64 object-cover">
+            <p class="p-3 font-semibold">The Irresponsible</p>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+<!-- footer -->
+
+<div class="w-full bg-black text-white px-4 pt-16 pb-10 mx-0 border-2">
+  <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+
+    <div class="sm:col-span-2">
+      <a href="/" aria-label="Go home" class="inline-flex items-center">
+        <svg class="w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="3" y="1" width="7" height="12"></rect>
+          <rect x="3" y="17" width="7" height="6"></rect>
+          <rect x="14" y="1" width="7" height="6"></rect>
+          <rect x="14" y="11" width="7" height="12"></rect>
+        </svg>
+        <span class="ml-2 text-xl font-bold uppercase">Company</span>
+      </a>
+
+      <div class="mt-6 lg:max-w-sm">
+        <p class="text-sm text-white">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+        </p>
+        <p class="mt-4 text-sm text-white">
+          Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.
+        </p>
+      </div>
+    </div>
+
+    <div class="space-y-2 text-sm">
+      <p class="text-base font-bold text-white">Contacts</p>
+
+      <div class="flex">
+        <p class="mr-1 text-white">Phone:</p>
+        <a href="tel:850-123-5021" class="transition-colors duration-300 text-red-400 hover:text-red-600">850-123-5021</a>
+      </div>
+
+      <div class="flex">
+        <p class="mr-1 text-white">Email:</p>
+        <a href="mailto:info@lorem.mail" class="transition-colors duration-300 text-red-400 hover:text-red-600">info@lorem.mail</a>
+      </div>
+
+      <div class="flex">
+        <p class="mr-1 text-white">Address:</p>
+        <a href="https://www.google.com/maps" class="transition-colors duration-300 text-red-400 hover:text-red-600">312 Lovely Street, NY</a>
+      </div>
+    </div>
+
+    <div>
+      <span class="text-base font-bold text-white">Social</span>
+
+      <div class="flex items-center mt-1 space-x-3">
+        <a href="/" class="text-gray-300 hover:text-red-400 transition">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5"></svg>
+        </a>
+        <a href="/" class="text-gray-300 hover:text-red-400 transition">
+          <svg viewBox="0 0 30 30" fill="currentColor" class="h-6"></svg>
+        </a>
+        <a href="/" class="text-gray-300 hover:text-red-400 transition">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="h-5"></svg>
+        </a>
+      </div>
+
+      <p class="mt-4 text-sm text-gray-300">
+        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-gray-700 lg:flex-row">
+    <p class="text-sm text-gray-300">
+      © Copyright 2020 Lorem Inc. All rights reserved.
+    </p>
+
+    <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+      <li><a href="/" class="text-sm text-gray-300 hover:text-red-400">F.A.Q</a></li>
+      <li><a href="/" class="text-sm text-gray-300 hover:text-red-400">Privacy Policy</a></li>
+      <li><a href="/" class="text-sm text-gray-300 hover:text-red-400">Terms & Conditions</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</body>
+</html>
